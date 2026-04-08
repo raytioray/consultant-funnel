@@ -233,32 +233,16 @@ export const ConsultationPage = () => {
             {/* 4. ACTION (Urgency & CTA & FAQ) */}
             <section className={styles.glassSection}>
                 <div className="container">
-                    <div className={styles.urgencyBox}>
-                        <Flame size={24} className={styles.flameIcon} />
-                        <div>
-                            <h3>⚠️ 每月僅開放 5 位免費健檢名額</h3>
-                            <p>為了確保在諮詢前能充分了解你的產業，並在諮詢時提供最高品質的戰略建議，我每個月僅能撥出有限的時間。一旦本月名額額滿，表單將強制關閉。</p>
+                    <div className={styles.actionGrid}>
+                        <div className={styles.urgencyBox}>
+                            <Flame size={24} className={styles.flameIcon} />
+                            <div>
+                                <h3>⚠️ 每月僅開放 5 位免費健檢名額</h3>
+                                <p>為了確保在諮詢前能充分了解你的產業，並在諮詢時提供最高品質的戰略建議，我每個月僅能撥出有限的時間。一旦本月名額額滿，表單將強制關閉。</p>
+                            </div>
                         </div>
-                    </div>
 
-                    <div className={styles.ctaWrapper}>
-                        <h2>這套系統適合你的事業嗎？</h2>
-                        <p>填寫以下表單，送出後系統將自動帶你前往預約頁面，選擇你方便的時段。</p>
-
-                        <iframe
-                            data-tally-src="https://tally.so/embed/EkJKqL?alignLeft=1&hideTitle=1&transparentBackground=1&dynamicHeight=1"
-                            loading="lazy"
-                            width="100%"
-                            height="1425"
-                            frameBorder="0"
-                            marginHeight="0"
-                            marginWidth="0"
-                            title="預約免費諮詢"
-                            style={{ borderRadius: '0.75rem', minHeight: '400px' }}
-                        />
-                    </div>
-
-                    <div className={styles.faqWrapper}>
+                        <div className={styles.faqWrapper}>
                         <h3 className={styles.faqTitle}>常見問題</h3>
                             <div className={styles.faqList}>
                                 {faqs.map((faq, idx) => (
@@ -277,6 +261,24 @@ export const ConsultationPage = () => {
                                     </div>
                                 ))}
                             </div>
+                        </div>
+                    </div>
+
+                    <div className={styles.ctaWrapper}>
+                        <h2>這套系統適合你的事業嗎？</h2>
+                        <p>填寫以下表單，送出後系統將自動帶你前往預約頁面，選擇你方便的時段。</p>
+
+                        <iframe
+                            data-tally-src="https://tally.so/embed/EkJKqL?alignLeft=1&hideTitle=1&transparentBackground=1&dynamicHeight=1"
+                            loading="lazy"
+                            width="100%"
+                            height="1425"
+                            frameBorder="0"
+                            marginHeight="0"
+                            marginWidth="0"
+                            title="預約免費諮詢"
+                            style={{ borderRadius: '0.75rem', minHeight: '400px' }}
+                        />
                     </div>
                 </div>
             </section>
