@@ -391,15 +391,9 @@
 }
 
 .actionGrid {
-    display: grid;
-    grid-template-columns: 1fr;
+    display: flex;
+    flex-direction: column;
     gap: 4rem;
-}
-
-@media (min-width: 1024px) {
-    .actionGrid {
-        grid-template-columns: 1fr 1fr;
-    }
 }
 
 .urgencyBox {
@@ -409,7 +403,7 @@
     border-left: 4px solid #ef4444;
     padding: 2rem;
     border-radius: 0 1rem 1rem 0;
-    margin-bottom: 3rem;
+    margin-bottom: 2rem;
 }
 
 .flameIcon {
