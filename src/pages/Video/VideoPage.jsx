@@ -77,7 +77,7 @@ export const VideoPage = () => {
                                 <h3>諮詢後 3 天內，免費獲得 $8,400 的完整診斷方案！</h3>
                             </div>
 
-                            <p className={styles.offerSubtitle}>完成諮詢後，在 Threads 上 tag Ray 並留言分享你的想法，即可免費獲得：</p>
+                            <p className={styles.offerSubtitle}>完成諮詢後，在 Threads 上 tag Ray（@raytio.ray）並留言分享你的想法，即可免費獲得：</p>
 
                             <div className={styles.offersGrid}>
                                 <div className={styles.offerItem}>
