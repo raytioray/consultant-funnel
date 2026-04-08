@@ -142,20 +142,21 @@
 }
 
 .painConclusion {
-    max-width: 800px;
+    max-width: 1000px;
     margin: 4rem auto 0;
     text-align: center;
-    padding: 2rem;
+    padding: 2.5rem;
     background: rgba(239, 68, 68, 0.05);
     border: 1px dashed rgba(239, 68, 68, 0.3);
     border-radius: 1rem;
     color: var(--text-secondary);
-    line-height: 1.6;
+    line-height: 1.8;
+    font-size: 1.1rem;
 }
 
 .painConclusion strong {
     color: #dc2626;
-    font-size: 1.125rem;
+    font-size: 1.25rem;
 }
 
 /* 2.5 Credibility / Authority */
