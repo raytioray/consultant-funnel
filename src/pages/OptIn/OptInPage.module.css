@@ -515,7 +515,6 @@
 /* Social Proof */
 .socialProof {
     margin-top: 6rem;
-    max-width: 800px;
     color: var(--text-secondary);
     font-size: 1.3rem;
     background: #f8fafc;
@@ -534,4 +533,11 @@
 
 .highlight strong {
     color: var(--primary);
+}
+
+/* Bottom CTA Form */
+.bottomFormCard {
+    margin: 4rem auto 0;
+    border: 2px solid var(--primary);
+    box-shadow: 0 20px 40px -10px rgba(30, 58, 138, 0.15);
 }

@@ -286,6 +286,57 @@ export const OptInPage = () => {
                 <p>無論你是上述哪個痛點，本質都是同一個問題：你的事業正在依賴「你的肝」或少數「明星員工」的記憶在運轉。</p>
                 <p className={styles.highlight}>你缺的不是更拼命工作，而是一套<strong>讓人、流程、資料都能自動運轉的「企業中樞系統」</strong>。</p>
             </section>
+
+            {/* Bottom CTA Form */}
+            <section className="container">
+                <Card hover className={styles.bottomFormCard}>
+                    <div className={styles.formBadge}>
+                        <PlayCircle size={16} /> 即將開始
+                    </div>
+                    <h3 className={styles.formTitle}>🎁 免費報名觀看教學，加碼再送專屬實戰工具！</h3>
+                    <p className={styles.formDesc}>
+                        這部精華教學影片，將完整拆解【Notion 中樞系統 × AI 自動化 × 流程梳理 × 遊戲化機制】四大核心。
+                        <br /><br />
+                        現在報名，立刻寄送一套我精心設計的<br /><strong>《標準化專案 Notion 模板》</strong>給你！
+                    </p>
+
+                    <div className={styles.mockupContainer}>
+                        <div className={styles.mockup}>
+                            <div className={styles.mockupHeader}>
+                                <span></span><span></span><span></span>
+                            </div>
+                            <div className={styles.mockupBody}>
+                                <div className={styles.mockupLine}></div>
+                                <div className={styles.mockupLine}></div>
+                                <div className={styles.mockupLine}></div>
+                            </div>
+                        </div>
+                        <div className={styles.freeTag}>FREE</div>
+                    </div>
+
+                    <form onSubmit={handleSubmit} className={styles.form}>
+                        <Input
+                            placeholder="你的名字"
+                            value={formData.name}
+                            onChange={(e) => setFormData({ ...formData, name: e.target.value })}
+                            required
+                        />
+                        <Input
+                            type="email"
+                            placeholder="你的 Email"
+                            value={formData.email}
+                            onChange={(e) => setFormData({ ...formData, email: e.target.value })}
+                            required
+                        />
+                        {error && (
+                            <p style={{ color: 'red', fontSize: '0.9rem', marginTop: '0.5rem' }}>{error}</p>
+                        )}
+                        <Button type="submit" fullWidth size="lg" className="mt-8" disabled={isSubmitting}>
+                            {isSubmitting ? '送出中...' : '👉 立即免費索取教學影片與 Notion 模板！'}
+                        </Button>
+                    </form>
+                </Card>
+            </section>
         </div>
     );
 };
