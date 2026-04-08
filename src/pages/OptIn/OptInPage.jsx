@@ -261,6 +261,26 @@ export const OptInPage = () => {
                 </div>
             </section>
 
+            {/* Stats Bar */}
+            <section className="container">
+                <div className={styles.statsBar}>
+                    <div className={styles.statItem}>
+                        <div className={styles.statNumber}>30+</div>
+                        <div className={styles.statLabel}>已協助企業</div>
+                    </div>
+                    <div className={styles.statDivider} />
+                    <div className={styles.statItem}>
+                        <div className={styles.statNumber}>5+</div>
+                        <div className={styles.statLabel}>涵蓋產業</div>
+                    </div>
+                    <div className={styles.statDivider} />
+                    <div className={styles.statItem}>
+                        <div className={styles.statNumber}>100%</div>
+                        <div className={styles.statLabel}>客製化導入</div>
+                    </div>
+                </div>
+            </section>
+
             {/* Social Proof */}
             <section className={`container text-center ${styles.socialProof}`}>
                 <p>無論你是上述哪個痛點，本質都是同一個問題：你的事業正在依賴「你的肝」或少數「明星員工」的記憶在運轉。</p>
