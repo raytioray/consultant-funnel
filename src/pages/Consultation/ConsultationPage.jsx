@@ -1,11 +1,10 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import {
     CheckCircle2, XCircle, ChevronDown,
     Settings, Users, Clock, Database, UserCheck, Flame
 } from 'lucide-react';
 import rayProfile from '../../assets/個人IP圖貼.png';
 import { Card } from '../../components/Card/Card';
-import { Button } from '../../components/Button/Button';
 import styles from './ConsultationPage.module.css';
 
 const faqs = [
@@ -30,6 +29,18 @@ export const ConsultationPage = () => {
         if (openFaq === index) setOpenFaq(null);
         else setOpenFaq(index);
     };
+
+    useEffect(() => {
+        const w = 'https://tally.so/widgets/embed.js';
+        if (document.querySelector(`script[src="${w}"]`)) {
+            if (window.Tally) window.Tally.loadEmbeds();
+            return;
+        }
+        const s = document.createElement('script');
+        s.src = w;
+        s.onload = () => window.Tally && window.Tally.loadEmbeds();
+        document.body.appendChild(s);
+    }, []);
 
     return (
         <div className={styles.consultationPage}>
@@ -234,15 +245,19 @@ export const ConsultationPage = () => {
 
                             <div className={styles.ctaWrapper}>
                                 <h2>這套系統適合你的事業嗎？</h2>
-                                <p>與其自己花幾個月盲目嘗試、買錯系統，不如讓我直接幫你抓出盲點。<br />準備好告別混亂，迎向自動化與規模化了嗎？</p>
+                                <p>填寫以下表單，送出後系統將自動帶你前往預約頁面，選擇你方便的時段。</p>
 
-                                <Button
-                                    size="lg"
-                                    className={styles.finalCtaBtn}
-                                    onClick={() => window.open('https://calendar.notion.so/meet/raytio/pt1aap4oup', '_blank')}
-                                >
-                                    👉 是的！我要立即預約本月免費諮詢名額！
-                                </Button>
+                                <iframe
+                                    data-tally-src="https://tally.so/embed/EkJKqL?alignLeft=1&hideTitle=1&transparentBackground=1&dynamicHeight=1"
+                                    loading="lazy"
+                                    width="100%"
+                                    height="1425"
+                                    frameBorder="0"
+                                    marginHeight="0"
+                                    marginWidth="0"
+                                    title="預約免費諮詢"
+                                    style={{ borderRadius: '0.75rem', minHeight: '400px' }}
+                                />
                             </div>
                         </div>
 
