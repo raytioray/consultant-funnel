@@ -1,0 +1,69 @@
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    width: 100%;
+}
+
+.label {
+    font-size: 0.875rem;
+    font-weight: 600;
+    color: var(--text-secondary);
+    font-family: var(--font-sans);
+}
+
+.inputContainer {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.icon {
+    position: absolute;
+    left: 1rem;
+    color: var(--text-muted);
+    pointer-events: none;
+}
+
+.input {
+    width: 100%;
+    background: #ffffff;
+    border: 1px solid #e2e8f0;
+    color: var(--text-primary);
+    border-radius: 9999px;
+    /* Pill shape for inputs too */
+    padding: 0.75rem 1.25rem;
+    font-size: 1rem;
+    font-family: var(--font-sans);
+    transition: all var(--transition-fast);
+}
+
+.withIcon {
+    padding-left: 3rem;
+}
+
+.input:focus {
+    outline: none;
+    border-color: var(--secondary);
+    box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.15);
+    background: #ffffff;
+}
+
+.input::placeholder {
+    color: var(--text-muted);
+}
+
+.errorInput {
+    border-color: #ef4444;
+}
+
+.errorInput:focus {
+    border-color: #ef4444;
+    box-shadow: 0 0 0 3px rgba(239, 68, 68, 0.15);
+}
+
+.errorText {
+    font-size: 0.75rem;
+    color: #ef4444;
+    margin-top: 0.25rem;
+}

@@ -1,0 +1,35 @@
+.footer {
+    border-top: 1px solid var(--border-glass);
+    padding: 3rem 0;
+    margin-top: 4rem;
+    background: #f8fafc;
+}
+
+.footerContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+@media (min-width: 768px) {
+    .footerContainer {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
+
+.logo {
+    font-family: var(--font-display);
+    font-weight: 800;
+    font-size: 1.125rem;
+}
+
+.logoText {
+    color: var(--primary);
+}
+
+.copyright {
+    color: var(--text-muted);
+    font-size: 0.875rem;
+}

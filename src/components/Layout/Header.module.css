@@ -1,0 +1,52 @@
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 80px;
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border-bottom: 1px solid var(--border-glass);
+    z-index: 50;
+    display: flex;
+    align-items: center;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.02);
+}
+
+.headerContainer {
+    display: flex;
+    justify-content: center;
+    /* Center logo since no other nav exists */
+    align-items: center;
+}
+
+@media (min-width: 768px) {
+    .headerContainer {
+        justify-content: flex-start;
+        /* Keep left on desktop */
+    }
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    font-family: var(--font-display);
+    font-weight: 900;
+    font-size: 1.25rem;
+    letter-spacing: 0.05em;
+    color: var(--primary);
+}
+
+.logoText {
+    color: var(--primary);
+}
+
+.logoIcon {
+    width: 24px;
+    height: 24px;
+    background: var(--primary);
+    border-radius: 6px;
+    display: inline-block;
+}
