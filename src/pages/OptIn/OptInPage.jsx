@@ -179,7 +179,11 @@ export const OptInPage = () => {
                                 </div>
                                 <h3 className={styles.formTitle}>🎁 免費報名觀看教學，加碼再送專屬實戰工具！</h3>
                                 <p className={styles.formDesc}>
-                                    這部精華教學影片，將完整拆解【Notion 中樞系統 × AI 自動化 × 流程梳理 × 遊戲化機制】四大核心。
+                                    這部影片，是我花了大量時間，把過去協助 30+ 家企業系統化的實戰經驗全部整理後，濃縮而成的精華教學。
+                                    <br /><br />
+                                    這部影片我不是教理論，不是軟體操作介紹：而是我真實走過混亂、又重建起來的過來人，把最關鍵的方法論直接告訴你。
+                                    <br /><br />
+                                    我將完整拆解<br /><span style={{fontSize: '0.95em'}}>【Notion 中樞系統 × AI 自動化 × 流程梳理 × 遊戲化機制】四大核心。</span>
                                     <br /><br />
                                     現在報名，立刻寄送一套我精心設計的<br /><strong>《標準化專案 Notion 模板》</strong>給你！
                                 </p>
@@ -295,7 +299,11 @@ export const OptInPage = () => {
                     </div>
                     <h3 className={styles.formTitle}>🎁 免費報名觀看教學，加碼再送專屬實戰工具！</h3>
                     <p className={styles.formDesc}>
-                        這部精華教學影片，將完整拆解【Notion 中樞系統 × AI 自動化 × 流程梳理 × 遊戲化機制】四大核心。
+                        這部影片，是我花了大量時間，把過去協助 30+ 家企業系統化的實戰經驗全部整理後，濃縮而成的精華教學。
+                        <br /><br />
+                        這部影片我不是教理論，不是軟體操作介紹：而是我真實走過混亂、又重建起來的過來人，把最關鍵的方法論直接告訴你。
+                        <br /><br />
+                        我將完整拆解<br /><span style={{fontSize: '0.95em'}}>【Notion 中樞系統 × AI 自動化 × 流程梳理 × 遊戲化機制】四大核心。</span>
                         <br /><br />
                         現在報名，立刻寄送一套我精心設計的<br /><strong>《標準化專案 Notion 模板》</strong>給你！
                     </p>
